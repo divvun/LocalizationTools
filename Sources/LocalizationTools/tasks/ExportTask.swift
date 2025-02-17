@@ -15,14 +15,14 @@ struct ExportTask {
     private let EXCLUDED_TRANSLATIONS: Set<String> = ["CFBundleName", "CFBundleDisplayName", "CFBundleShortVersionString", "1Password Fill Browser Action"]
 
     /// This dictionary holds locale mappings between `[PontoonLocaleCode: XCodeLocaleCode]`.
-    private let LOCALE_MAPPING = [
-        "ga" : "ga-IE",
-        "nb" : "nb-NO",
-        "nn" : "nn-NO",
-        "sv" : "sv-SE",
-        "fil" : "tl",
-        "sat-Olck" : "sat",
-    ]
+    private let LOCALE_MAPPING: [String: String] = [:]
+        // "ga" : "ga-IE",
+        // "nb" : "nb-NO",
+        // "nn" : "nn-NO",
+        // "sv" : "sv-SE",
+        // "fil" : "tl",
+        // "sat-Olck" : "sat",
+    // ]
 
     private let EXPORT_BASE_PATH = "/tmp/ios-localization"
 
