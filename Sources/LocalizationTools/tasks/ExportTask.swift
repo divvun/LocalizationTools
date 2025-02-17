@@ -77,7 +77,7 @@ struct ExportTask {
         let source = URL(fileURLWithPath: "\(EXPORT_BASE_PATH)/\(locale).xcloc/Localized Contents/\(locale).xliff")
         let l10nLocale: String
         if locale == "en" {
-            l10nLocale = "en-US"
+            l10nLocale = "en"
         } else {
             l10nLocale = LOCALE_MAPPING[locale] ?? locale
         }
