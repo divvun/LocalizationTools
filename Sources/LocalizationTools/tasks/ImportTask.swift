@@ -73,7 +73,7 @@ struct ImportTask {
     ]
 
     func createXcloc(locale: String) -> URL {
-        let source = URL(fileURLWithPath: "\(l10nRepoPath)/\(locale)/firefox-ios.xliff")
+        let source = URL(fileURLWithPath: "\(l10nRepoPath)/\(locale)/strings.xliff")
         let locale = LOCALE_MAPPING[locale] ?? locale
         let tmp = FileManager.default.temporaryDirectory.appendingPathComponent("temp.xliff")
         let destination = temporaryDir.appendingPathComponent("\(locale).xcloc/Localized Contents/\(locale).xliff")

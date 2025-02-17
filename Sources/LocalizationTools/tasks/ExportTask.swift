@@ -81,7 +81,7 @@ struct ExportTask {
         } else {
             l10nLocale = LOCALE_MAPPING[locale] ?? locale
         }
-        let destination = URL(fileURLWithPath: "\(l10nRepoPath)/\(l10nLocale)/firefox-ios.xliff")
+        let destination = URL(fileURLWithPath: "\(l10nRepoPath)/\(l10nLocale)/strings.xliff")
         _ = try! FileManager.default.replaceItemAt(destination, withItemAt: source)
     }
 
